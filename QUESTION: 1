@@ -1,0 +1,11 @@
+#include <iostream>
+using namespace std;
+
+int main() 
+{
+  cout << "*"<<std::endl;    // cout << "*" helps us output * and <<std::endl; ends that particular line and makes a new line.
+  cout << "**"<<std::endl;   // cout << "**" helps us output ** and <<std::endl; ends that particular line and makes a new line.
+  cout << "***"<<std::endl;  // cout << "***" helps us output *** and <<std::endl; ends that particular line and makes a new line.
+  cout << "****"<<std::endl; // cout << "****" helps us output **** and <<std::endl; ends that particular line and makes a new line.
+  cout << "*****"<<std::endl; // cout << "*****" helps us output ***** and <<std::endl; ends that particular line and makes a new line.
+}
