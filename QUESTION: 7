@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string.h>
+using std::cout;
+using std::cin;
+
+int main() 
+{
+    char word[100];
+    int i, j, flag = 1;//when flag is 0, it can be said as false, and any non zero value of flag can be said as true
+
+    cout << "Enter Any word";
+    cin>> word;
+
+    for (i = 0, j = strlen(word) - 1; i < j; i++, j--)//here we identify the two end points and start comparing the values of the first and last while incrementing from the first and decrementing from the last
+
+     {
+        if (word[i] != word[j])//expression where ! basically acts as a not operator. i.e it reverses the word 
+        {
+            flag = 0;
+            break;
+        }
+    }
+
+    if (flag==1)
+     {
+       cout<<("The word is a palindrome");//if the above expression is satisfied, this will be the input
+    } else {
+       cout<<("The word is not a palindrome");//any other outcome will give this output
+    }
+
+    
+}
