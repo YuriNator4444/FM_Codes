@@ -1,0 +1,15 @@
+#include <iostream>
+#include <string>
+#include <stdlib.h>
+#include <ctime>
+using std::cout;
+using std::cin;
+int main()
+{
+    int elements;
+    int array[elements];
+    cout<< "Enter the elements of the array";
+    cin>> elements;
+    cout<<"The size of the array is"<<sizeof(array)/sizeof(1);//we divied the byte size of our inputted array with the byte size of any single valued array 
+
+}
