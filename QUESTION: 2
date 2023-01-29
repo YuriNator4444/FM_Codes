@@ -1,0 +1,19 @@
+#include <iostream>
+using std::cout;
+using std::cin;
+int main ()
+{
+    char word[20]; //We decleared the existence of a char variable called "word"
+    cout <<"Write any Word";//We output this message
+    cin >> word;//We let the user enter a word
+    int number;//We decleared the existence of an integer called number
+    cout <<"Write any Integer";//We output this message
+    cin >> number;//We let the use enter a number 
+    double decimal;//We decleare the existence of a decimal called as decimal
+    cout <<"Enter Any number with a decimal part";//We output this message
+    cin >> decimal ;//We let the user enter a decimal
+    cout << "You entered the following values-"<<std::endl;//We output this message when everything is entered
+    cout << "The Word is " << word <<std::endl;//We output this message proceeded by the word entered
+    cout << "The Integer is " << number<< std::endl;//We output this message proceeded by the Integer entered
+    cout << "The Number is " <<decimal;//We output this message proceeded by the decimal entered
+}
