@@ -1,0 +1,18 @@
+#include <iostream>
+using std::cout;
+using std::cin;
+int main ()
+{
+int n;//declearing 
+cout <<"How many rows would you want?";//output question
+cin >> n;//user input
+   
+    for (int i=1;i<=n;i++)//n is the number of rows, hence, if the number of rows>=i, where i starts from 1, while constantly incrementing from 1, the second for statement will come into play
+    {
+        for (int j=1;j<=i;j++)//j starting from 1, is <=i while constantly incrementing, then * will be in the output
+        {
+            cout << "*";
+        }
+        cout << std::endl;//next line, so the pattern forms 
+    } 
+}
