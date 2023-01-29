@@ -1,0 +1,50 @@
+#include <iostream>
+#include <cmath>//inclusion of header file cmath
+using std::cout;
+using std::cin;
+
+int main() 
+{
+    double X,Y;//double so that we can input decimals as well
+    char calculation;//declearing of character class called calculation
+
+    cout<<"Enter the first number: ";
+    cin>>X;
+
+    cout<<"Enter the second number: ";
+    cin>>Y;
+
+    cout<<"What would you like to do? ";
+    cin>> calculation;
+
+    switch (calculation)//here, the calculation element can be switched with any of these cases 
+    {
+        case '+':
+            cout<< (X + Y);//expression if + is chosen as the case
+            break;//break means the present running case terminates here and will proceed further to another case
+        case '-':
+            cout<<(X - Y);
+            break;
+        case '*':
+            cout<<( X*Y);
+            break;
+        case '/':
+            cout<<(X/Y);
+            break;
+        case 's':
+            cout<<(sin(X));
+            break;
+        case 'c':
+            cout<<(cos(X));
+            break;
+        case 't':
+            cout<<(tan(X));
+            break;
+        case 'e':
+            cout<<(pow(X, Y));
+            break;
+      
+    }
+
+
+}
